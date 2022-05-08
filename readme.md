@@ -48,7 +48,7 @@ Voila! Your icon is now display and can be treated as any other image or text el
 
 ![Above example rendered](https://i.imgur.com/NddTQ8u.png)
 
-## Opening Link
+## Opening Links
 
 You can pass any url into the 'link' property of the Icon element, and clicking on the icon will open that link in a new tab.
 
@@ -58,7 +58,7 @@ You can pass any url into the 'link' property of the Icon element, and clicking 
 
 ## Icons
 
-The npm package comes pre-configured will all of the icons from [simpleicons.org](https://simpleicons.org/)  
+The npm package comes pre-configured with all of the icons from [simpleicons.org](https://simpleicons.org/)  
 The names are lowercase, without spaces, and numbers (and periods) have been converted to words.  
 (Ex: Twitter -> twitter, Google Maps -> googlemaps, About.me -> aboutdotme, 1Password -> onepassword)
 
