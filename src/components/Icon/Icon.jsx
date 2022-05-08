@@ -13,6 +13,8 @@ function Icon({
   rotation = [0, 0, 0],
   spin = 0,
   link = undefined,
+  style = {},
+  className = "",
 }) {
   // Allows using either just a depth value, or a full extrude config
   const extrude = extrudeSettings || { depth: depth };
@@ -37,7 +39,19 @@ function Icon({
     );
   }
   if (typeof link !== "string" && typeof link !== "undefined") {
-    throw new Error("Invalid value for link property of Icon");
+    throw new Error(
+      "Invalid value for link property of Icon, must be a string"
+    );
+  }
+  if (typeof className !== "string") {
+    throw new Error(
+      "Invalid value for className property of Icon, must be a string"
+    );
+  }
+  if (typeof style !== "object") {
+    throw new Error(
+      "Invalid value for style property of Icon, must be an object"
+    );
   }
 
   function ExtrudedSvg() {
@@ -118,7 +132,13 @@ function Icon({
   }
 
   return (
-    <div style={{ height: "100%", width: "100%" }}>
+    <div
+      style={
+        Object.keys(style).length > 0
+          ? style
+          : { height: "100%", width: "100%" }
+      }
+      className={className}>
       <Canvas camera={{ position: [0, 0, 100] }}>
         <pointLight position={[0, 0, 100]} color={lightColor} intensity={1} />
         <ambientLight color={lightColor} intensity={0.1} />
