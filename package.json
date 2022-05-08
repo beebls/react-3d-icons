@@ -1,12 +1,37 @@
 {
   "name": "react-3d-icons",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.1",
   "files": [
     "dist"
   ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
+  "description": "3d, Animated, Drag-and-Drop icons for React",
+  "author": {
+    "name": "Logan Kordov",
+    "email": "logan@beebl.es",
+    "url": "https://beebl.es"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beebls/react-3d-icons.git"
+  },
+  "keywords": [
+    "react-3d-icons",
+    "social-icons",
+    "links",
+    "social-links",
+    "icons",
+    "3d",
+    "svg",
+    "react-icons",
+    "react",
+    "three",
+    "threejs-icons",
+    "threejs-svg"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
