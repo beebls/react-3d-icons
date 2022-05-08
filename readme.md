@@ -45,6 +45,7 @@ Add the Icon element and specify your icon, as well as any other parameters you 
 ```
 
 Voila! Your icon is now display and can be treated as any other image or text element.  
+
 ![Above example rendered](https://i.imgur.com/NddTQ8u.png)
 
 ## Opening Link
