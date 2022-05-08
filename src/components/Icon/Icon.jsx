@@ -54,7 +54,7 @@ function Icon({
     //I want all icons to be by default scaled to an equivalent of a 10x10 svg viewbox
     //This initially scales the svg down to that 10x10 viewbox, then multiplies it by the scale factor the user sets
     //So if the svg is originally 24x24, a scale of 1 would be a 2.4x2.4 viewbox
-    const scaleAdjusted = [(10 / width) * scale, (10 / height) * scale, 1];
+    const scaleAdjusted = [(10 / width) * scale, (10 / width) * scale, 1];
 
     //Since svgs start from the top left corner, this does math to adjust it up and back by half of its size, so that it is cenetered in its canvas
     //It also offsets the Z axis by the thickness of the extrude, so that it is 100% centered
@@ -63,10 +63,13 @@ function Icon({
       (scaleAdjusted[1] / 2) * height + position[1],
       extrude.depth / 2 + position[2],
     ];
+
+    //ThreeJS is based off of radian rotation, but to make it simpler I want the icons to be simple degree rotation
+    //This "converts" them
     const rotAdjusted = [
-      (Math.PI / 2) * 2 + rotation[0],
-      0 + rotation[1],
-      0 + rotation[2],
+      (Math.PI / 180) * rotation[0],
+      (Math.PI / 180) * rotation[1],
+      (Math.PI / 180) * rotation[2],
     ];
 
     // Each svg has multiple paths, and each path has multiple shapes.
@@ -102,11 +105,12 @@ function Icon({
         ref={svgRef}
         onClick={() => {
           if (link) window.open(link);
-        }}>
+        }}
+        rotation={rotAdjusted}>
         <group
-          rotation={rotAdjusted}
           position={posAdjusted}
-          scale={scaleAdjusted}>
+          scale={scaleAdjusted}
+          rotation={[(Math.PI / 2) * 2, 0, 0]}>
           {shapeArr.map((i, index) => pathToMesh(i, index))}
         </group>
       </group>
