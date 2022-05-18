@@ -1,5 +1,5 @@
 import { Canvas, useLoader, useFrame } from "@react-three/fiber";
-import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader";
+import { SVGLoader } from "./SVGLoader";
 import { useRef } from "react";
 
 function Icon({

@@ -12,13 +12,7 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: [
-        "react",
-        "react-dom",
-        "three",
-        "three/examples/jsm/loaders/SVGLoader",
-        "@react-three/fiber",
-      ],
+      external: ["react", "react-dom", "three", "@react-three/fiber"],
     },
   },
   plugins: [react()],
