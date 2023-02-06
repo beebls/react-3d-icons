@@ -9,7 +9,7 @@
   "module": "./dist/index.es.js",
   "description": "3d, Animated, Drag-and-Drop icons for React",
   "author": {
-    "name": "Logan Kordov",
+    "name": "Beebles",
     "email": "logan@beebl.es",
     "url": "https://beebl.es"
   },
