@@ -1,7 +1,7 @@
 {
   "name": "react-3d-icons",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "files": [
     "dist"
   ],
@@ -9,16 +9,16 @@
   "module": "./dist/index.es.js",
   "description": "3d, Animated, Drag-and-Drop icons for React",
   "author": {
-    "name": "Beebles",
-    "email": "logan@beebl.es",
-    "url": "https://beebl.es"
+    "name": "Mo-Adeeb-Alkahat",
+    "email": "",
+    "url": ""
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beebls/react-3d-icons.git"
+    "url": "https://github.com/Mo-Adeeb-Alkahat/react-3d-icons"
   },
-  "homepage": "https://github.com/beebls/react-3d-icons#readme",
+  "homepage": "https://github.com/Mo-Adeeb-Alkahat/react-3d-icons#readme",
   "keywords": [
     "react-3d-icons",
     "social-icons",
@@ -42,12 +42,13 @@
     "@react-three/fiber": "^8.0.13",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "three": "^0.133.0"
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@vitejs/plugin-react": "^1.3.0",
-    "vite": "^2.9.7"
+    "vite": "^5.4.2",
+    "@vitejs/plugin-react": "^4.3.1"
   }
+  
 }
