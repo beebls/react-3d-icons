@@ -9,9 +9,9 @@
   "module": "./dist/index.es.js",
   "description": "3d, Animated, Drag-and-Drop icons for React",
   "author": {
-    "name": "Beebles",
-    "email": "logan@beebl.es",
-    "url": "https://beebl.es"
+    "name": "Mo-Adeeb-Alkahat",
+    "email": "",
+    "url": ""
   },
   "contributors": [
     {
@@ -22,9 +22,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beebls/react-3d-icons.git"
+    "url": "https://github.com/Mo-Adeeb-Alkahat/react-3d-icons"
   },
-  "homepage": "https://github.com/beebls/react-3d-icons#readme",
+  "homepage": "https://github.com/Mo-Adeeb-Alkahat/react-3d-icons#readme",
   "keywords": [
     "react-3d-icons",
     "social-icons",
@@ -56,4 +56,5 @@
     "vite": "^5.4.2",
     "@vitejs/plugin-react": "^4.3.1"
   }
+  
 }
