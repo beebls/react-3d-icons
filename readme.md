@@ -100,7 +100,3 @@ The Icon component comes with properties which you can customize to change how y
 | rotation        | An array of the X, Y, and Z rotation of your icon. Unlike ThreeJS, which uses radian rotation, this uses "normal" degree rotation (Ex: 360 degrees is a full turn)                                        | array                                               | [0, 0, 0]     |           |
 | spin            | Set to true to make your icon spin in a circle, or set it to a number and increase or decrease it to change the speed of rotation.                                                                        | number OR boolean                                   | 0             |           |
 | link            | If specified, the link that will be opened upon clicking on the icon.                                                                                                                                     | string                                              | _undefined_   |           |
-
-## Issues
-
-This is a very new project, so obviously it is not perfect yet. If you have issues or feature requests you can email me at logan@beebl.es and I will do my best to help you.
